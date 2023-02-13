@@ -36,9 +36,9 @@ begin
 			if(count < N-1) then 
 				count := count + 1;
 			   finished <= '0';
-			else 								-- get rid of the else statement to have it stop after sending bits
+			else 								
 				--count := 0;
-				finished <= '1';	-- THIS SIGNAL WILL TURN ON THE GCC BIT SAMPLER/READER
+				finished <= '1';	-- Enables the other vhdl program to get ready to sample bits
 				--state <= '1';
 			end if;
 			
